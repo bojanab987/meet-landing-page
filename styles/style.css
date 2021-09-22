@@ -114,7 +114,8 @@ p {
 .btn {
     border-radius: 29px;
     height: 58px;
-    color:var(--primary-alabasterWhite);    
+    color:var(--primary-alabasterWhite);   
+    font-weight: 900; 
 }
 
 .btn__download {
@@ -129,6 +130,18 @@ p {
 .btn__question {
     background-color: var(--primary-darkViolet);
     width:139px;
+}
+
+.btn:hover{
+    cursor: pointer;    
+}
+
+.btn__download:hover{
+    background: rgb(113, 192, 212);
+}
+
+.btn__question:hover{
+    background: rgb(177, 139, 221);
 }
 
 .uifaces{   
@@ -286,11 +299,14 @@ h2 {
 
 .footer-btn{
     background-color: var(--primary-darkViolet);
-    margin:0.5rem;
-    
+    margin:0.5rem;    
 }
 .footer-btn>span{
     color:var(--neutral-lightViolet);
+}
+
+.footer-btn:hover{
+    background: rgb(177, 139, 221);
 }
 
 .divider-2{ 
@@ -305,47 +321,6 @@ h2 {
     content: '02';
     color: var(--primary-darkBlueGray);
 }
-
-@media screen and(width:375px) {
-  .face{
-      width:55px;
-  } 
-}
-
-@media screen and(min-width:716px)  {  
-    .uifaces{
-         gap: 2rem 3rem;        
-    }
-    .top-images{
-        gap:3rem;
-    }
-    img.face{
-        width:110px;
-    }
-
-     .uifaces-left{
-        justify-content: end; 
-        padding-top: 3.75rem;
-    }
-
-    .uifaces-left img:nth-child(2),
-    .uifaces-left img:nth-child(5) {
-        margin-top: -3.75rem;
-    }
-
-    .uifaces-right{
-        padding-top: 3.75rem;
-    }
-
-    .uifaces-right img:nth-child(1),
-    .uifaces-right img:nth-child(3),
-    .uifaces-right img:nth-child(4),
-    .uifaces-right img:nth-child(6){
-        margin-top: -3.25rem;
-    } 
-}
-
-
 @media screen and (min-width: 768px) and (max-width:1023px) {
     
    .top-headline{
@@ -397,7 +372,7 @@ h2 {
     
     .top-headline{
         font-size: 64px;
-        list-style: 1;
+        line-height: 1;
     }
     h2{
         font-size: 40px;
